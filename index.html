@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zain BH App</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #f4f4f4; */
+}
+
+.app-container {
+  text-align: center;
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.logo-section img {
+  max-width: 100px; /* Adjust as per your logo's size */
+  margin-bottom: 10px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.logo-section .logo {
+  /* Adjust as per your logo's size */
+  width: 80px; /* Example size - adjust as needed */
+  margin-right: 15px;
+  margin-left: 20px;
+  border-radius: 10px
+}
+
+.logo-section .logo-text {
+  text-align: left;
+}
+
+.logo-section h1, .logo-section p {
+  margin: 0;
+}
+
+.logo-section h1 {
+  color: #333;
+  font-size: 1.5em; /* Example size - adjust as needed */
+}
+
+.logo-section p {
+  color: #666;
+  font-size: 1em; /* Example size - adjust as needed */
+}
+
+.description {
+  margin: 30px 0;
+  text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.description p {
+  margin: 10px 0;
+  color: #333;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* ... rest of your CSS ... */
+
+.button-container {
+    display: inline-block; /* Use inline-block for tighter wrapping */
+    position: relative; /* Allows absolute positioning relative to this container */
+    margin-top: 20px; /* Spacing from the content above */
+}
+
+.download-button {
+    background-color: white; /* or any color that matches the background */
+    color: #000; /* Color of the text */
+    border: 2px solid #4CAF50; /* Add green border to match the caps */
+    padding: 10px 20px;
+    font-size: 16px;
+    position: relative; /* Stacks the text above the pseudo-elements */
+    z-index: 2;
+    border-radius: 4px; /* Optional: if you want rounded corners */
+}
+
+.button-container::before,
+.button-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Adjust the width of the colored caps */
+    height: 100%; /* Height matches the button height */
+    background-color: #4CAF50; /* Color of the caps */
+    z-index: 1;
+}
+
+.button-container::before {
+    left: -10px; /* Adjust the position of the cap to be closer to the text */
+}
+
+.button-container::after {
+    right: -10px; /* Adjust the position of the cap to be closer to the text */
+}
+
+.rights {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* ... rest of your CSS ... */
+
+.download-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px; /* Adjust as per your design */
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="app-container">
+  <div class="logo-section">
+    <img src="logo.jpg" alt="Zain Logo" class="logo"> <!-- Replace with your actual logo image path -->
+    <div class="logo-text">
+      <h1>Zain Bh App</h1>
+      <p  style="color: #2B7755; font-weight: bold;">Kingdom Of Bahrain</p>
+    </div>
+  </div>
+
+  <div class="description">
+    <p style="font-weight: bold;"><strong>  Download Now Zain App</strong></p>
+    <p>Quickly recharge your prepaid line or pay your postpaid bill directly through the app. Access exclusive offers, discounts, and promotions on data bundles and other services. Download Now Zain app to explore it.</p>
+  </div>
+
+
+  <div class="download-section">
+    <a href="./app-debug.apk" class="download-button">Download</a>
+    <p class="rights">All rights reserved</p>
+</div>
+</div>
+
+</body>
+</html>
